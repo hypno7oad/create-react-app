@@ -2,7 +2,7 @@
   "name": "hypno7oad-react-scripts",
   "version": "2.1.8",
   "description": "Hypno7oad's configuration and scripts for Create React App.",
-  "repository": "facebook/create-react-app",
+  "repository": "hypno7oad/create-react-app",
   "license": "MIT",
   "engines": {
     "node": ">=8.10"
