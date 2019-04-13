@@ -2,8 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-getUsername() {
-  if (!process.env.USERNAME) {
+function getUsername() {
+  if (!process.env.REACT_APP_USERNAME) {
     throw new Error('Please define `USERNAME` .env file');
   }
 
