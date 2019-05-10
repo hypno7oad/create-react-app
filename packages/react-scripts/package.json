@@ -80,6 +80,8 @@
     "workbox-webpack-plugin": "4.2.0"
   },
   "devDependencies": {
+    "@hypno7oad/platform": "^0.1.1",
+    "@hypno7oad/ui": "^0.1.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
