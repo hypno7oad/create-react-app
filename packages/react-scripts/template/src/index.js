@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './index.css'
+import {Users} from './mocks'
+import {App} from '@hypno7oad/platform'
+import {DefaultContent} from '@hypno7oad/ui'
+import * as clientCustomizations from './Suvoda'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const useSelectedUserState = () => useState(Users[0])
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const appConfiguration = {
+  Users,
+  clientCustomizations,
+  useSelectedUserState,
+  headerUserBoxWidth: 200,
+  ContentComponent: DefaultContent,
+  // debug: true
+}
+
+ReactDOM.render(<App {...appConfiguration} />, document.getElementById('root'));
